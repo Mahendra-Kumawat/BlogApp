@@ -4,11 +4,11 @@ const Card = ({post}) => {
 
   return (
     <div className='flex flex-col gap-1 max-w-[700px] mx-auto w-11/12'>
-      <h1 className='font-bold text-xl'>{post.title}</h1>
+      <h1 className='font-bold text-xl hover:underline hover:cursor-pointer'>{post.title}</h1>
       <div>
         <div>
           <p className='text-[15px]'>
-            By <span className='italic'> {post.author} </span> On <span className='font-bold underline'> {post.category} </span>
+            By <span className='italic'> {post.author} </span> On <span className='font-bold underline hover:cursor-pointer'> {post.category} </span>
           </p>
           <p className='text-[15px] mt-1'>
             Posted On <span> {post.date} </span>
